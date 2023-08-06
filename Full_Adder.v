@@ -1,4 +1,4 @@
-/* dependencies: Half_Adder */
+/* Dependencies: Half_Adder */
 module Full_Adder(sum, cout, a, b, cin);
 	input a, b, cin;
 	output sum, cout;

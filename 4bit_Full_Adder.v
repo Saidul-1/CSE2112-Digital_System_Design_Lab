@@ -1,4 +1,4 @@
-/* dependencies: Half_Adder, Full_Adder */
+/* Dependencies: Half_Adder, Full_Adder */
 module Four_bit_Full_Adder(cout, s, a, b, cin);
 	input [3:0]a,b;
 	input cin;

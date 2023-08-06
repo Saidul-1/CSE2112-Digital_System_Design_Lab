@@ -1,4 +1,4 @@
-/* dependencies: Half_Adder, Full_Adder, 4bit_Full_Adder */
+/* Dependencies: Half_Adder, Full_Adder, 4bit_Full_Adder */
 module Four_bit_Adder_Subtractor(cout, s, a, b, cin);
 	// if cin=0, works as a adder. else, works as a subtractor
 	input [3:0] a, b;
