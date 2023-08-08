@@ -13,9 +13,9 @@ module MOD10_Counter(Q, Clk);
 	
 	nand(Clr, Q[1], Q[3]);
 
-	JK_FlipFlop jkff0(Q[0], Qb[0], J, K, Clr, Clk);
-	JK_FlipFlop jkff1(Q[1], Qb[1], J, K, Clr, Q[0]);
-	JK_FlipFlop jkff2(Q[2], Qb[2], J, K, Clr, Q[1]);
-	JK_FlipFlop jkff3(Q[3], Qb[3], J, K, Clr, Q[2]);	
+	JK_FlipFlop JKFF0(Q[0], Qb[0], J, K, Clk, Clr);
+	JK_FlipFlop JKFF1(Q[1], Qb[1], J, K, Q[0], Clr);
+	JK_FlipFlop JKFF2(Q[2], Qb[2], J, K, Q[1], Clr);
+	JK_FlipFlop JKFF3(Q[3], Qb[3], J, K, Q[2], Clr);	
 
 endmodule
