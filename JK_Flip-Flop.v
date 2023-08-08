@@ -1,22 +1,22 @@
 /* During wave simulation in ModelSim,
-Set the variable clk as clock.
-Force the value of clr to 0 only for the first run. 
+Set the variable Clk as clock.
+Force the value of Clr to 0 only for the first run. 
 After the first run, force the value to 1. 
 */
-module JK_FlipFlop(Q, Qb, J, K, clr, clk);
-	input J, K, clr, clk;
+module JK_FlipFlop(Q, Qb, J, K, Clk, Clr);
+	input J, K, Clk, Clr;
 	output Q, Qb;
-	wire w1, w2, w3, w4, w5, w6, w7;
+	wire w1, w2, w3, w4, w5, Q1, Qb1, Clkb;
 
-	nand(w1, J, Qb, clk, clr);
-	nand(w2, K, Q, clk);
-	nand(w3, w1, w4);
-	nand(w4, w3, w2, clr);
+	nand(w1, J, Qb, Clk, Clr);
+	nand(w2, K, Q, Clk);
+	nand(Q1, w1, Qb1);
+	nand(Qb1, w2, Q1, Clr);
 
-	not(w7, clk);
+	not(Clkb, Clk);
 
-	nand(w5, w7, w3);
-	nand(w6, w4, w7);
-	nand(Q, Qb, w5);
-	nand(Qb, Q, w6, clr);
+	nand(w3, Q1, Clkb);
+	nand(w4, Qb1, Clkb);
+	nand(Q, w3, Qb);
+	nand(Qb, w4, Q, Clr);
 endmodule
