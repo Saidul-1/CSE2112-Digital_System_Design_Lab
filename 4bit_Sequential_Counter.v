@@ -3,7 +3,7 @@
 /* During wave simulation in ModelSim,
 Set the variable Clk as clock.
 Force the value of Clr variable to 0 only for the first run. 
-After the first run, set it to NoForce. 
+After the first run, Force the value to 1. 
 */
 module Sequential_Counter(Q, Clk, Clr);
 	input Clk, Clr;
