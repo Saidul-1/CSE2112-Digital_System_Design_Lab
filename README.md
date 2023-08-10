@@ -13,6 +13,8 @@ You can install ModelSim on Ubuntu following the [ModelSim Installation Guidelin
 7. [MOD-10 Counter](https://github.com/Saidul-1/CSE2112-Digital_System_Design_Lab/blob/main/MOD-10_Counter.v)
 8. [3-bit Synchronous Up/Down Counter](https://github.com/Saidul-1/CSE2112-Digital_System_Design_Lab/blob/main/3bit_Sync_UpDown_Counter.v)
 9. [4-bit Sequential Counter](https://github.com/Saidul-1/CSE2112-Digital_System_Design_Lab/blob/main/4bit_Sequential_Counter.v)
+10. [3-to-8 Decoder](https://github.com/Saidul-1/CSE2112-Digital_System_Design_Lab/blob/main/3-to-8_Decoder.v)
+11. [8-to-1 Multiplexer](https://github.com/Saidul-1/CSE2112-Digital_System_Design_Lab/blob/main/8-to-1_Multiplexer.v)
 
 ### Dependencies:
 1. [Half Adder](https://github.com/Saidul-1/CSE2112-Digital_System_Design_Lab/blob/main/Half_Adder.v)
